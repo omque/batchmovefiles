@@ -5,7 +5,7 @@ import os, shutil
 
 source_path = os.walk(input("What is the source path?" + "\n"))
 dest_path = input("What is the destination path?" + "\n")
-file_extension = input("What is the file extension?" + "\n")
+file_extension = input("What is the file extension? No quotes required." + "\n")
 
 for folderName, subfolders, filename in source_path:
 	for name in filename:
