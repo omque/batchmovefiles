@@ -2,10 +2,11 @@
 #  moveMKV.py - Move a batch of .mkv files into one source 
 
 import os, shutil
+prompt = "> "
 
-source_path = os.walk(input("What is the source path?" + "\n"))
-dest_path = input("What is the destination path?" + "\n")
-file_extension = input("What is the file extension? No quotes required." + "\n")
+source_path = os.walk(input("What is the source path?" + "\n"+ prompt))
+dest_path = input("What is the destination path?" + "\n"+ prompt)
+file_extension = input("What is the file extension? No quotes required." + "\n" + prompt)
 
 for folderName, subfolders, filename in source_path:
 	for name in filename:
