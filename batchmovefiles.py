@@ -14,3 +14,5 @@ for folderName, subfolders, filename in source_path:
 			print("File found: " + name)
 			#Define source folder name and join with file name. Send to Destination Path.
 			shutil.move(os.path.join(folderName, name), dest_path)
+		else:
+			print("Didn't find it!")
